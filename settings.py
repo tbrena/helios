@@ -5,6 +5,9 @@ import sys
 import json
 import os
 
+import os
+SITE_URL = os.environ.get("SITE_URL", "https://helios-uwsf.onrender.com")
+
 # import ldap
 # from django_auth_ldap.config import LDAPSearch
 
