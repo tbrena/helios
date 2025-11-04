@@ -8,6 +8,13 @@ import os
 # import ldap
 # from django_auth_ldap.config import LDAPSearch
 
+# --- AUTHENTICAÇÃO (sem LDAP) ---
+AUTHENTICATION_BACKENDS = (
+    "django.contrib.auth.backends.ModelBackend",
+)
+# Se existir qualquer bloco/variável começando com AUTH_LDAP_, remova ou comente.
+
+
 TESTING = 'test' in sys.argv
 
 # go through environment variables and override them
