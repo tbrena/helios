@@ -5,8 +5,8 @@ import sys
 import json
 import os
 
-import ldap
-from django_auth_ldap.config import LDAPSearch
+# import ldap
+# from django_auth_ldap.config import LDAPSearch
 
 TESTING = 'test' in sys.argv
 
